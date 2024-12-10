@@ -13,9 +13,10 @@ Reference github repository for the paper [C2P-CLIP: Injecting Category Common P
   year={2024}
 }
 ```
-:star: If Our code is helpful to your images or projects, please help star this repo. Thanks! :hugs:
+:star: If our code is helpful to you, please help star this repo. Thanks! :hugs:
 
-
+## News 🆕
+- `2024/12`: C2P-CLIP is accepted by AAAI 2025! Congratulations and thanks to my all co-authors!
 
 # **Overall Pipeline**
 <p align="center">
@@ -55,7 +56,13 @@ python inference.py --dataroot {Test path}
 - pytorch=2.3.0+cu118
 - transformers=4.42.3
 
-
+### Ablation Study
+| Category Common Prompt | Contrastive learning | Lora     | mAcc.|
+| :--------:|     :--------:   |:--------:|:--------: |
+|           |                  |          |   79.71   |
+|           |                  |    ✔     |   88.57   |
+|           |       ✔          |    ✔     |   89.67   |
+|    ✔      |       ✔          |    ✔     |   93.79   |
 
 ## Acknowledgments
 
